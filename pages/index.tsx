@@ -15,7 +15,7 @@ const Home: NextPage = () => {
     'function totalSupply() public view virtual override returns (uint256)',
     "function mint(uint _mintAmount) public payable",
   ]
-  const contractAddress = "0xadD26451C45c9A78E5D532E4611108f2608fE8dc"
+  const contractAddress = "0xc851cF0dE81bc6137E9746c6338970204763Ea92"
   useEffect(() => {
     const setSaleInfo = async() =>{
       const provider = await new ethers.providers.Web3Provider((window as any).ethereum);
@@ -39,7 +39,7 @@ const Home: NextPage = () => {
       try{
         await (window as any).ethereum.request({
           method: 'wallet_switchEthereumChain',
-          params: [{ chainId: '137' }],
+          params: [{ chainId: '0x89' }],
         });
         const provider = await new ethers.providers.Web3Provider((window as any).ethereum);
         await provider.send('eth_requestAccounts', []);
