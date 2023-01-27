@@ -141,8 +141,8 @@ const Home: NextPage = () => {
   return (
     <div>
       <Seo
-          pageTitle={'ETH MASKS'}
-          pageDescription={'ETH MASKS'}
+          pageTitle={'POLYGON MASKS'}
+          pageDescription={'POLYGON MASKS'}
           pageImg={''}
           pageImgWidth={1920}
           pageImgHeight={1005}
