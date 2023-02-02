@@ -91,7 +91,7 @@ const Home: NextPage = () => {
       const provider = new ethers.providers.Web3Provider((window as any).ethereum);
       const signer = provider.getSigner();
       await provider.send('eth_requestAccounts', []);
-      const tokenPrice = '0.01';
+      const tokenPrice = '0.00';
       const quantity = String(mintQuantity);
       const contract = new ethers.Contract(contractAddress, abi, signer);
       try{
